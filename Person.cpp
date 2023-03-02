@@ -7,14 +7,14 @@ Person::Person() {
 	password = "";
 }
 Person::Person(int id, string name, string password) {
-	setID(id);
+	this->id = id;
 	setName(name);
 	setPassword(password);
 }
 
-void Person::setID(int id) {
-	this->id = id;
-}
+//void Person::setID(int id) {
+//	this->id = id;
+//}
 void Person::setName(string name) {
 	if (Validation::validateName(name)) {
 		this->name = name;
