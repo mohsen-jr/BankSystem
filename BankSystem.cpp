@@ -25,6 +25,7 @@ int main() {
 	a2.display();
 	a3.display();
 	cout << "new line " << endl;
+	cout << "second line " << endl;
 	
 	
 	return 0;
