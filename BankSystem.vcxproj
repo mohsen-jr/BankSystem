@@ -131,7 +131,6 @@
     <ClCompile Include="BankSystem.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Employee.cpp" />
-    <ClCompile Include="FileHandling.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>

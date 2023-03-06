@@ -24,6 +24,7 @@ int main() {
 	a.display();
 	a2.display();
 	a3.display();
+	cout << "new line " << endl;
 	
 	
 	return 0;
