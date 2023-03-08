@@ -1,4 +1,10 @@
+#include "FileManager.h"
+#include "Admin.h"
+#include "Client.h"
 #include "Employee.h"
+#include "DataSourceInterface.h"
+#include "FilesHelper.h"
+#include "Parser.h"
 
 int Employee::count = 0;
 vector<Employee> allEmployees = FileManager::getAllEmployees();

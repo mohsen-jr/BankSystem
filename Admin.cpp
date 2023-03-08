@@ -1,4 +1,10 @@
 #include "Admin.h"
+#include "FileManager.h"
+#include "Client.h"
+#include "Employee.h"
+#include "DataSourceInterface.h"
+#include "FilesHelper.h"
+#include "Parser.h"
 
 vector<Admin> allAdmins = FileManager::getAllAdmins();
 Admin::Admin(){

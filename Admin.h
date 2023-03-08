@@ -1,5 +1,11 @@
 #pragma once
 #include "Employee.h"
+#include "FileManager.h"
+#include "Admin.h"
+#include "Client.h"
+#include "DataSourceInterface.h"
+#include "FilesHelper.h"
+#include "Parser.h"
 class Admin :
     public Employee
 {

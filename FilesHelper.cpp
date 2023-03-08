@@ -1,5 +1,11 @@
 #include "FilesHelper.h"
 #include "Parser.h"
+#include "FileManager.h"
+#include "Admin.h"
+#include "Client.h"
+#include "Employee.h"
+#include "DataSourceInterface.h"
+
 
 void FilesHelper::saveClient(Client c)
 {

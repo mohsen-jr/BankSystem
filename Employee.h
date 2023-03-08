@@ -2,6 +2,12 @@
 #include "Person.h"
 #include "FilesHelper.h"
 #include "FileManager.h"
+#include "Admin.h"
+#include "Client.h"
+#include "Employee.h"
+#include "DataSourceInterface.h"
+#include "Parser.h"
+
 class Employee :
     public Person
 {

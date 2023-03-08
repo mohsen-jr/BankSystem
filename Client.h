@@ -1,6 +1,12 @@
 #pragma once
 #include "Person.h"
 #include "FileManager.h"
+#include "Admin.h"
+#include "Client.h"
+#include "Employee.h"
+#include "DataSourceInterface.h"
+#include "FilesHelper.h"
+#include "Parser.h"
 
 class Client :
     public Person
