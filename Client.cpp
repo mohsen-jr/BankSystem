@@ -1,6 +1,8 @@
 #include "Client.h"
 
 int Client::count = 0;
+vector<Client> allClients = FileManager::getAllClients();
+
 Client::Client() {
 	count++;
 	id = count;
@@ -9,6 +11,10 @@ Client::Client() {
 Client::Client(string name, string password, double balance) : Person(count + 1, name, password) {
 	setBalance(balance);
 	count++;
+}
+int Client::getCount()
+{
+	return count;
 }
 void Client::deposit(double amount) {
 	if (Validation::isPositive(amount))
