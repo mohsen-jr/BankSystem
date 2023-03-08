@@ -14,9 +14,9 @@
 class Parser
 {
 public:
-	static vector<string> split(string);
-	static Client parseToClient(string);
-	static Employee parseToEmployee(string);
-	static Admin parseToAdmin(string);
+	static vector<string> split(string line);
+	static Client parseToClient(string line);
+	static Employee parseToEmployee(string line);
+	static Admin parseToAdmin(string line);
 };
 
