@@ -131,10 +131,13 @@
     <ClCompile Include="BankSystem.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Employee.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="FileHandling.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="FilesHelper.cpp" />
     <ClCompile Include="Parser.cpp" />
+=======
+>>>>>>> 9ccab1b191f40c6ae2a284c607f18310c58d9314
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
