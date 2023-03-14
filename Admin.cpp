@@ -1,6 +1,5 @@
 #include "Admin.h"
 
-
 Admin::Admin(){
 }
 Admin::Admin(string name, string password, double salary) : Employee(name, password, salary) {
@@ -22,13 +21,16 @@ Employee* Admin::searchEmployee(int id)
 
 void Admin::editEmployee(int id, string name, string password, double salary)
 {
+
 	searchEmployee(id)->setName(name);
 	searchEmployee(id)->setPassword(password);
 	searchEmployee(id)->setSalary(salary);
+
 }
 
 void Admin::listEmployees()
 {
+
 	for (emIt = allEmployees.begin(); emIt != allEmployees.end(); emIt++) {
 		emIt->display();
 		cout << "------------------------------------\n";

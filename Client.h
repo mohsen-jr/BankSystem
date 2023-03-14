@@ -13,6 +13,7 @@ public:
     Client();
     Client(string name, string password, double balance);
 
+    int getCount();
     void deposit(double amount);
     void withdraw(double amount);
     void transferTo(double amount, Client& recipient);

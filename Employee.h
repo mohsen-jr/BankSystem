@@ -16,6 +16,10 @@ public:
 
     void setSalary(double salary);
     double getSalary();
+    void addClient(Client& client);
+    Client* searchClient(int id);
+    void listClients();
+    void editClient(int id, string name, string password, double balance);
     void display();
     void addClient(Client& client);
     Client* searchClient(int id);
@@ -27,4 +31,3 @@ public:
 
 static vector<Employee> allEmployees;
 static vector<Employee>::iterator emIt;
-

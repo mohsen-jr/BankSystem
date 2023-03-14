@@ -54,7 +54,6 @@ vector<Employee> FileManager::getAllEmployees()
 vector<Admin> FileManager::getAllAdmins()
 {
 
-	
 	Admin a;
 	//Admin::count--;
 	ifstream in;
