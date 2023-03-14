@@ -1,12 +1,15 @@
 #pragma once
 #include "Person.h"
+#include <vector>
+
 class Client :
     public Person
 {
 private:
-    static int count;
+    
     double balance;
 public:
+    static int count;
     Client();
     Client(string name, string password, double balance);
 
@@ -19,3 +22,5 @@ public:
     void display();
 };
 
+static vector<Client> allClients;
+static vector<Client>::iterator clIt;

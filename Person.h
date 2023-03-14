@@ -15,7 +15,7 @@ public:
 
 	void setName(string name);
 	void setPassword(string password);
-	//void setID(int id);
+	void setID(int id);
 
 	string getName();
 	string getPassword();

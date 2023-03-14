@@ -26,3 +26,31 @@ void Employee::display() {
 	Person::display();
 	cout << "Salary: " << salary << endl;
 }
+
+void Employee::addClient(Client& client)
+{
+	allClients.push_back(client);
+}
+
+Client* Employee::searchClient(int id)
+{
+	for (clIt = allClients.begin(); clIt != allClients.end(); clIt++) {
+		if (clIt->getID() == id) return clIt._Ptr;
+	}
+	return nullptr;
+}
+
+void Employee::listClients()
+{
+	for (clIt = allClients.begin(); clIt != allClients.end(); clIt++) {
+		clIt->display();
+		cout << "--------------------------------\n";
+	}
+}
+
+void Employee::editClient(int id, string name, string password, double balance)
+{
+	searchClient(id)->setName(name);
+	searchClient(id)->setPassword(password);
+	searchClient(id)->setBalance(balance);
+}	

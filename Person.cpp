@@ -12,9 +12,9 @@ Person::Person(int id, string name, string password) {
 	setPassword(password);
 }
 
-//void Person::setID(int id) {
-//	this->id = id;
-//}
+void Person::setID(int id) {
+	this->id = id;
+}
 void Person::setName(string name) {
 	if (Validation::validateName(name)) {
 		this->name = name;
