@@ -47,4 +47,3 @@ d. Admin can edit Employee
 
 e. Admin can list all employees
 
-`Hint: you can create Person which contains name, id, password and let the client, employee inherit all data from Person, Admin could inherit from employee.`
