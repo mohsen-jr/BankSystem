@@ -1,31 +1,52 @@
 #pragma once
-#include "Person.h"
-#include "FilesHelper.h"
-#include "FileManager.h"
-#include "Admin.h"
 #include "Client.h"
-#include "Employee.h"
-#include "DataSourceInterface.h"
-#include "Parser.h"
 
-class Employee :
-    public Person
-{
+class Employee : public Person {
 protected:
-    static int count;
-    double salary;
+	//Attribute
+	double salary;
 public:
-    Employee();
-    Employee(string name, string password, double salary);
-
-    void setSalary(double salary);
-    double getSalary();
-    void addClient(Client& client);
-    Client* searchClient(int id);
-    void listClients();
-    void editClient(int id, string name, string password, double balance);
-    void display();
+	//Constructors
+	Employee() : Person() {
+		this->salary = 0.0;
+	}
+	Employee(string name, int id, string password, double salary) : Person(name, id, password) {
+		this->salary = salary;
+	}
+	//Setter
+	void setSalary(double salary) {
+		this->salary = salary;
+	}
+	//Getter
+	double getSalary() {
+		return this->salary;
+	}
+	//Methods
+	void display() {
+		Person::display();
+		cout << "Salary: " << this->salary << endl;
+	}
+	void addClient(Client& client) {
+		allClients.push_back(client);
+	}
+	Client* searchClient(int id) {
+		for (clIt = allClients.begin(); clIt != allClients.end(); clIt++) {
+			if (clIt->getId() == id) { return &(*clIt); }
+		}
+		return NULL;
+	}
+	void listClient() {
+		for (clIt = allClients.begin(); clIt != allClients.end(); clIt++) {
+			clIt->display();
+			cout << "-------------------------\n";
+		}
+	}
+	void editClient(int id, string name, string password, double balance) {
+		searchClient(id)->setName(name);
+		searchClient(id)->setPassword(password);
+		searchClient(id)->setBalance(balance);
+	}
 };
 
 static vector<Employee> allEmployees;
-static vector<Employee>::iterator emIt;
+static vector<Employee>::iterator eIt;
